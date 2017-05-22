@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<button (click)="modal.show()">Open Modal</button>
+
+<app-modal #modal>
+  <div class="app-modal-header">
+    header
+  </div>
+  <div class="app-modal-body">
+    Whatever content you like, form fields, anything
+  </div>
+</app-modal>
+
+<p>Simple modal example.</p>
