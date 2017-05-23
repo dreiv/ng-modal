@@ -2,8 +2,10 @@
   visibility: hidden;
   width: 0;
   height: 0;
-  opacity: 0;
-  will-change: visibility, opacity;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: visibility;
 }
 
 :host(.visible),
@@ -15,14 +17,10 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  opacity: inherit;
 }
 
 :host(.visible) {
-  display: flex;
-  visibility: inherit;
-  align-items: center;
-  justify-content: center;
+  visibility: visible;
 }
 
 .modal-backdrop {
