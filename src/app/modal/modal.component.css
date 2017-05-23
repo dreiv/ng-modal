@@ -68,7 +68,7 @@
   align-self: flex-start;
 }
 
-/deep/ .app-modal-header {
+/deep/ app-modal-header {
   flex-grow: 1;
 }
 
